@@ -17,7 +17,7 @@ const formatCheckboxEls = Array.from(document.querySelectorAll(".format-toggle")
 const variantLiveTextEls = Array.from(document.querySelectorAll(".variant-live-text"));
 const snippetCodeEls = Array.from(document.querySelectorAll(".snippet-code"));
 const copyButtons = Array.from(document.querySelectorAll(".copy-btn"));
-const releaseRepoPlaceholder = "Compdog-inc/PixlFont";
+const fontsBaseUrl = "https://compdog-inc.github.io/PixlFont/fonts";
 
 let wordIndex = 0;
 let charIndex = 0;
@@ -91,15 +91,15 @@ function buildSnippetCode(family, fileName, selectedFormats) {
 	const baseName = fileName.replace(/\.woff2$/i, "");
 	const formatMeta = {
 		woff2: {
-			url: `https://github.com/${releaseRepoPlaceholder}/releases/latest/download/${baseName}.woff2`,
+			url: `${fontsBaseUrl}/${baseName}.woff2`,
 			label: "woff2"
 		},
 		woff: {
-			url: `https://github.com/${releaseRepoPlaceholder}/releases/latest/download/${baseName}.woff`,
+			url: `${fontsBaseUrl}/${baseName}.woff`,
 			label: "woff"
 		},
 		ttf: {
-			url: `https://github.com/${releaseRepoPlaceholder}/releases/latest/download/${baseName}.ttf`,
+			url: `${fontsBaseUrl}/${baseName}.ttf`,
 			label: "truetype"
 		}
 	};

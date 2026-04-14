@@ -13,9 +13,9 @@
 @font-face {
 	font-family: "PixlFont";
 	src:
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.woff2") format("woff2"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.woff") format("woff"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.ttf") format("truetype");
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Regular.woff2") format("woff2"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Regular.woff") format("woff"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -24,9 +24,9 @@
 @font-face {
 	font-family: "PixlFont Light";
 	src:
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.woff2") format("woff2"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.woff") format("woff"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.ttf") format("truetype");
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Light-Regular.woff2") format("woff2"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Light-Regular.woff") format("woff"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Light-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -35,9 +35,9 @@
 @font-face {
 	font-family: "PixlFont Dark";
 	src:
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.woff2") format("woff2"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.woff") format("woff"),
-		url("https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.ttf") format("truetype");
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Dark-Regular.woff2") format("woff2"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Dark-Regular.woff") format("woff"),
+		url("https://compdog-inc.github.io/PixlFont/fonts/PixlFont-Dark-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
