@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>PixlFont Font Typeface</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+	<section class="hero" id="top">
+		<div class="hero-noise" aria-hidden="true"></div>
+
+		<div class="hero-content">
+			<p class="eyebrow">Experimental Color Pixel Typeface</p>
+			<h1>PixlFont</h1>
+			<p class="hero-sub">
+				PixlFont renders characters as grayscale pixel blocks.
+			</p>
+			<div class="type-row" aria-live="polite">
+				<span class="typed-word" id="typedWord">PIXEL UI</span>
+				<span class="caret" aria-hidden="true"></span>
+			</div>
+			<a class="hero-cta" href="#preview">Scroll to Variant Preview</a>
+		</div>
+
+		<div class="hero-display" aria-hidden="true">
+			<div class="blend-text blur" id="blendTextBlur">PIXEL UI</div>
+			<div class="blend-text sharp" id="blendTextSharp">PIXEL UI</div>
+		</div>
+	</section>
+
+	<main class="wrap" id="preview">
+		<section class="preview-controls">
+			<div class="controls-head">
+				<p class="controls-kicker">Variant Lab</p>
+				<h2>Live Preview Controls</h2>
+			</div>
+
+			<div class="control-grid">
+				<label class="control-field" for="globalPreviewText">
+					<span>Preview text</span>
+					<input id="globalPreviewText" type="text" value="The big brown fox jumps over the crazy dog." />
+				</label>
+
+				<label class="control-field" for="globalSize">
+					<span>Global size <strong id="sizeValue">64px</strong></span>
+					<input id="globalSize" type="range" min="24" max="140" value="64" />
+				</label>
+
+				<fieldset class="control-field format-field">
+					<legend>Include font formats in snippets</legend>
+					<div class="format-options">
+						<label class="format-option">
+							<input type="checkbox" class="format-toggle" value="woff2" checked />
+							<span>WOFF2</span>
+						</label>
+						<label class="format-option">
+							<input type="checkbox" class="format-toggle" value="woff" />
+							<span>WOFF</span>
+						</label>
+						<label class="format-option">
+							<input type="checkbox" class="format-toggle" value="ttf" />
+							<span>TTF</span>
+						</label>
+					</div>
+				</fieldset>
+			</div>
+		</section>
+
+		<section class="variant-grid">
+			<article class="variant-card variant-regular">
+				<div class="variant-head">
+					<h3>PixlFont Regular</h3>
+					<p>Mixed grayscale for expressive display moments.</p>
+				</div>
+				<div class="variant-stage stage-regular">
+					<p class="variant-live-text font-regular" data-variant="regular">Design fast. Ship cleaner UI.</p>
+				</div>
+				<div class="download-row" aria-label="Download PixlFont Regular files">
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.woff2" download>Download WOFF2</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.woff" download>Download WOFF</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Regular.ttf" download>Download TTF</a>
+				</div>
+				<div class="snippet-wrap">
+					<div class="snippet-head">
+						<span>CSS from GitHub Release assets</span>
+						<button class="copy-btn" data-copy-target="snippet-regular" type="button">Copy</button>
+					</div>
+					<pre><code id="snippet-regular" class="snippet-code" data-family="PixlFont" data-file="PixlFont-Regular.woff2"></code></pre>
+				</div>
+			</article>
+
+			<article class="variant-card variant-light">
+				<div class="variant-head">
+					<h3>PixlFont Light Regular</h3>
+					<p>Bright grayscale tuned for dark-theme interfaces.</p>
+				</div>
+				<div class="variant-stage stage-light">
+					<p class="variant-live-text font-light" data-variant="light">Design fast. Ship cleaner UI.</p>
+				</div>
+				<div class="download-row" aria-label="Download PixlFont Light Regular files">
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.woff2" download>Download WOFF2</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.woff" download>Download WOFF</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Light-Regular.ttf" download>Download TTF</a>
+				</div>
+				<div class="snippet-wrap">
+					<div class="snippet-head">
+						<span>CSS from GitHub Release assets</span>
+						<button class="copy-btn" data-copy-target="snippet-light" type="button">Copy</button>
+					</div>
+					<pre><code id="snippet-light" class="snippet-code" data-family="PixlFont Light" data-file="PixlFont-Light-Regular.woff2"></code></pre>
+				</div>
+			</article>
+
+			<article class="variant-card variant-dark">
+				<div class="variant-head">
+					<h3>PixlFont Dark Regular</h3>
+					<p>Darker grayscale designed for clean light-theme UI.</p>
+				</div>
+				<div class="variant-stage stage-dark">
+					<p class="variant-live-text font-dark" data-variant="dark">Design fast. Ship cleaner UI.</p>
+				</div>
+				<div class="download-row" aria-label="Download PixlFont Dark Regular files">
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.woff2" download>Download WOFF2</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.woff" download>Download WOFF</a>
+					<a class="download-btn" href="https://github.com/Compdog-inc/PixlFont/releases/latest/download/PixlFont-Dark-Regular.ttf" download>Download TTF</a>
+				</div>
+				<div class="snippet-wrap">
+					<div class="snippet-head">
+						<span>CSS from GitHub Release assets</span>
+						<button class="copy-btn" data-copy-target="snippet-dark" type="button">Copy</button>
+					</div>
+					<pre><code id="snippet-dark" class="snippet-code" data-family="PixlFont Dark" data-file="PixlFont-Dark-Regular.woff2"></code></pre>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<script src="./script.js"></script>
+</body>
+</html>

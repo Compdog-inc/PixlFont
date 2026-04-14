@@ -1,0 +1,42 @@
+name: Build and Upload Fonts on Release
+
+on:
+    release:
+        types: [created]
+
+permissions:
+    contents: write
+
+jobs:
+    build-font-assets:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Set up Python
+              uses: actions/setup-python@v6
+              with:
+                  python-version: "3.12"
+                  cache: "pip"
+
+            - name: Install dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install -r requirements.txt
+
+            - name: Generate font files
+              run: |
+                  python main.py --output-dir output
+                  ls -lah output
+
+            - name: Upload release assets
+              uses: softprops/action-gh-release@v3
+              with:
+                  files: |
+                      output/*.ttf
+                      output/*.woff
+                      output/*.woff2
+                  fail_on_unmatched_files: true
+                  overwrite_files: true
